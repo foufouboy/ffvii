@@ -55,9 +55,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("medias/cloud.png"), linear-gradient(rgba(87,87,87,255), black 90%);
+    background-image: 
+	    url("medias/cloud.png"), 
+	    url("medias/aerith.png"),
+	    linear-gradient(rgba(87,87,87,255), black 90%);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: left, right;
     
 }
 
