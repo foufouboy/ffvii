@@ -81,6 +81,11 @@ p {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* IDs */
 
 #ffvii-main-menu { /* Temporaire */
@@ -124,6 +129,7 @@ p {
 #ffvii-meteor {
     position: relative;
 }
+
 #ffvii-meteor-img {
     position: absolute; 
     top: 0px;
@@ -138,16 +144,36 @@ p {
     list-style: none;
 }
 
+#ffvii-main-menu > li {
+    flex: 1;
+}
 #ffvii-main-menu a {
+    color: rgba(227,233,249,0.9);
     text-decoration: none;
+    padding: 1rem 2rem 1rem 2rem;
+}
+#ffvii-main-menu a:hover {
     color: white;
+    border-top:
+        inset rgba(255, 255, 255, 0.2) 1px;
+    border-bottom:
+        inset rgba(255, 255, 255, 0.2) 1px;
 }
 
+#ffvii-menu-theme:hover #ffvii-theme-submenu {
+   /* Fin de la première partie du style. 
+      Plus tard : 
+      TODO : 
+      Menu déroulant de thème (ici au passage de la souris)
+      et les thèmes
+    */ 
+}
 #ffvii-theme-submenu {
     display: none;
 }
 
 #ffvii-main-content {
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     flex: 1 1 auto;
     margin-bottom: 0;
@@ -196,6 +222,18 @@ p {
 }
 
 
+.rubric-title {
+    font-size: 1.3em;
+    padding: 10px;
+    border-width: 0.5px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0), 
+            rgba(255, 255, 255, 0.75), 
+            rgba(0, 0, 0, 0)) 1 100%;
+}
 .ffvii-menu-border {
     border: 3px ridge #ced2d2;
     border-radius: 3px;
